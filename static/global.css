@@ -1,0 +1,71 @@
+body {
+	/* margin: 0; */
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	padding: 0px;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
+/* @media (min-width: 1200px) {
+	
+
+	.navbar-right {
+		margin-right: 150px!important;
+	}
+	} */
+
+.page a {
+	color: gray!important;
+}
+
+.page h2 {
+	color: dimgray!important;
+}
+
+:root {
+	--navbar-height: 8px;
+	--margin-xs: 13px;
+	--margin-s: 21px;
+	--margin-m: 34px;
+	--margin-xm: 55px;
+	--margin-l: 89px;
+	--margin-xl: 144px;
+	--margin-xxl: 233px;
+	--margin-xxxl: 377px;
+}
+
+.padding-zero {
+	padding: var(--navbar-height) 0 !important;
+}
+
+@media (min-width: 1200px) {
+	.margin-r-large {
+		margin-right: var(--margin-xxl);
+	}
+	.margin-l-large {
+		margin-left: var(--margin-xxl);
+	}
+}
