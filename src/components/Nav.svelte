@@ -25,9 +25,9 @@
 	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
 	<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
 		<Nav class="ml-auto" navbar>
-			<!-- <NavItem>
+			<NavItem>
 				<NavLink href="software">Software</NavLink>
-			</NavItem> -->
+			</NavItem>
 			<NavItem>
 				<NavLink href="about">About me</NavLink>
 			</NavItem>

@@ -1,10 +1,5 @@
 <script>
-	import Card from 'sveltestrap/src/Card.svelte'
-	import CardHeader from 'sveltestrap/src/CardHeader.svelte'
-	import CardTitle from 'sveltestrap/src/CardTitle.svelte'
-	import CardBody from 'sveltestrap/src/CardBody.svelte'
-	import CardSubtitle from 'sveltestrap/src/CardSubtitle.svelte'
-	import CardText from 'sveltestrap/src/CardText.svelte'
+	import SofwareCard from '../components/SoftwareCard.svelte'
 </script>
 
 <svelte:head>
@@ -12,17 +7,19 @@
 </svelte:head>
 
 <div class="page test">
-	<h2>Software I like</h2>
-	<Card>
-		<CardHeader>
-			<CardTitle>Card title</CardTitle>
-		</CardHeader>
-		<CardBody>
-			<CardSubtitle>Card subtitle</CardSubtitle>
-			<CardText>
-				Some quick example text to build on the card title and make up the bulk
-				of the card's content.
-			</CardText>
-		</CardBody>
-	</Card>
+	<h1>Software I like</h1>
+    <p>On this page you can find a list of software, frameworks etc that I enjoy using.</p>
+    <SofwareCard
+        title="Godot Game Engine"
+        url="https://godotengine.org/"
+        desc="Godot is a 2D and 3D, cross-platform, free and open-source game
+						engine released under the MIT license. Godot aims to offer a fully
+						integrated game development environment. It allows developers to
+						create a game from scratch, needing no other tools beyond those used
+						for content creation (art assets, music, etc). Games using Godot can
+						be created with a variety of programming languages including C++,
+						C#, and any other language with GDNative bindings such as Rust, Nim,
+						and D."
+        imgUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/1024px-Godot_icon.svg.png"
+    />
 </div>
