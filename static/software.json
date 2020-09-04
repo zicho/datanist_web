@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Godot Game Engine",
+		"desc": "Godot is a 2D and 3D, cross-platform, free and open-source game engine released under the MIT license. Godot aims to offer a fully integrated game development environment. It allows developers to create a game from scratch, needing no other tools beyond those used for content creation (art assets, music, etc). Games using Godot can be created with a variety of programming languages including C++, C#, and any other language with GDNative bindings such as Rust, Nim, and D.",
+		"url": "https://godotengine.org/",
+		"imgUrl": "godot_icon.png"
+	},
+	{
+		"title": "Svelte",
+		"desc": "Svelte is a free and open-source JavaScript framework written by Rich Harris. Svelte applications do not include framework references. Instead, building a Svelte application generates code to manipulate the DOM, which may give better client run-time performance.",
+		"url": "https://svelte.dev/",
+		"imgUrl": "svelte_icon.png"
+	},
+	{
+		"title": "Sapper",
+		"desc": "Godot is a 2D and 3D, cross-platform, free and open-source game engine released under the MIT license. Godot aims to offer a fully integrated game development environment. It allows developers to create a game from scratch, needing no other tools beyond those used for content creation (art assets, music, etc). Games using Godot can be created with a variety of programming languages including C++, C#, and any other language with GDNative bindings such as Rust, Nim, and D.",
+		"url": "https://sapper.svelte.dev/",
+		"imgUrl": "sapper_icon.png"
+	}
+]

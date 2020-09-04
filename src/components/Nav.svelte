@@ -20,8 +20,8 @@
 		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 </svelte:head>
 
-<Navbar color="dark" class='shadow-lg padding-zero' dark fixed='top' expand="md">
-	<NavbarBrand class='margin-l-large' href="/">datanist</NavbarBrand>
+<Navbar color="dark" class='shadow-lg navbar-padding' dark fixed='top' expand="md">
+	<NavbarBrand class='screen-padding-left' href="/">datanist</NavbarBrand>
 	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
 	<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
 		<Nav class="ml-auto" navbar>
@@ -31,7 +31,7 @@
 			<NavItem>
 				<NavLink href="about">About me</NavLink>
 			</NavItem>
-			<NavItem class='margin-r-large'>
+			<NavItem class='screen-padding-right'>
 				<NavLink href="https://github.com/zicho">GitHub</NavLink>
 			</NavItem>
 		</Nav>

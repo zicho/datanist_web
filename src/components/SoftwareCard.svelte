@@ -10,15 +10,15 @@
     import Row from 'sveltestrap/src/Row.svelte'
     
     export let title: string;
+    export let desc: string;
     export let url: string;
     export let imgUrl: string;
-    export let desc: string;
 </script>
 
-<Card>
+<Card class="mb-s">
 	<CardHeader>
 		<CardTitle class="row align-items-center">
-			<strong>{title}</strong>
+			<strong><a class="black" href={url}>{title}</a></strong>
 		</CardTitle>
 	</CardHeader>
 	<CardBody>
@@ -35,7 +35,7 @@
 			</Col>
 		</Row>
 		<CardSubtitle class="float-right">
-			<a href={url}>Project website</a>
+			<a href={url}>Go to website</a>
 		</CardSubtitle>
 	</CardBody>
 </Card>

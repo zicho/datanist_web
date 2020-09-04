@@ -4,6 +4,7 @@ import replace from 'rollup-plugin-replace'
 import commonjs from 'rollup-plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import babel from 'rollup-plugin-babel'
+import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
 
@@ -38,6 +39,7 @@ export default {
 		output: config.client.output(),
 		preserveEntrySignatures: false,
 		plugins: [
+			json(),
 			replace({
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode),
@@ -91,6 +93,7 @@ export default {
 		output: config.server.output(),
 		preserveEntrySignatures: false,
 		plugins: [
+			json(),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode),

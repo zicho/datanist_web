@@ -1,9 +1,9 @@
 body {
-	/* margin: 0; */
 	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #333;
+	padding-top: 70px;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
@@ -19,13 +19,7 @@ code {
 	border-radius: 2px;
 }
 
-/* @media (min-width: 1200px) {
-	
-
-	.navbar-right {
-		margin-right: 150px!important;
-	}
-	} */
+.navbar {margin: 0!important; padding: var(--margin-xxs) 0 !important; }
 
 .page a {
 	color: gray!important;
@@ -39,12 +33,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: var(--margin-xs)!important;
 }
 
-p, span {
-	margin-bottom: var(--margin-s)!important;
-}
+/* .page p, span {
+	margin-bottom: var(--margin-s);
+} */
 
 :root {
-	--navbar-height: 5px;
 	--margin-xxs: 8px;
 	--margin-xs: 13px;
 	--margin-s: 21px;
@@ -55,11 +48,6 @@ p, span {
 	--margin-xxl: 233px;
 	--margin-xxxl: 377px;
 }
-
-.padding-zero {
-	padding: var(--navbar-height) var(--margin-xs)!important;
-}
-
 
 .card-header {
 	height: auto;
@@ -76,14 +64,30 @@ p, span {
 	padding: 0!important;
 }
 
+.mb-s {
+	margin-bottom: var(--margin-s)!important;
+}
+
+.mb-m {
+	margin-bottom: var(--margin-m)!important;
+}
+
+.mb-l {
+	margin-bottom: var(--margin-l)!important;
+}
+
+.screen-padding-right {
+	margin-right: var(--margin-xs); /* should be same as navbar margin */
+}
+.screen-padding-left {
+	margin-left: var(--margin-xs); /* should be same as navbar margin */
+}
+
 @media (min-width: 1200px) {
-	.padding-zero {
-		padding: var(--navbar-height) 0!important;
-	}
-	.margin-r-large {
+	.screen-padding-right {
 		margin-right: var(--margin-xxl);
 	}
-	.margin-l-large {
+	.screen-padding-left {
 		margin-left: var(--margin-xxl);
 	}
 }
