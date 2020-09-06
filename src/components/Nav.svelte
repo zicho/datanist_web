@@ -29,6 +29,9 @@
 				<NavLink href="software">Software</NavLink>
 			</NavItem>
 			<NavItem>
+				<NavLink href="game">Game</NavLink>
+			</NavItem>
+			<NavItem>
 				<NavLink href="about">About me</NavLink>
 			</NavItem>
 			<NavItem class='screen-padding-right'>
